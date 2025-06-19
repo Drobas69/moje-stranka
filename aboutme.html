@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -27,10 +26,20 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 30px;
+      padding: 15px 0;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
       backdrop-filter: blur(8px);
       z-index: 1000;
+    }
+
+    .navbar-inner {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .navbar a {
@@ -68,16 +77,19 @@
 <body>
   <!-- Navigace -->
   <div class="navbar">
-    <div><a href="index.html">Domů</a></div>
-    <div><a href="aboutme.html">About me</a></div>
+    <div class="navbar-inner">
+      <a href="index.html">Domů</a>
+      <a href="aboutme.html">About me</a>
+    </div>
   </div>
 
   <h1>O mně</h1>
 
   <p>
-    Pohledný, plavovlasý, sympatický člověk s charismatem na rozdávání.<br>
-    Mistr improvizace, legenda školních chodeb a nenápadný likvidátor každého testu.<br>
-    <strong>Močko nebenchuješ co já, moreeeee!</strong>
+    Jsem sympatický člověk s pozitivním přístupem a smyslem pro humor.<br>
+    Mám světlé vlasy, rád se směju a nebojím se vystoupit z davu.<br>
+    Ve škole i mimo ni dokážu zaujmout svým přirozeným charismatem a energií.<br>
+    A co se týče síly... no řekněme, že v posilce to nejsem já, kdo benčuje nejmíň. 😉
   </p>
 </body>
 </html>
