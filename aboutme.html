@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>O mně</title>
+  <title>About Me</title>
   <style>
     * {
       box-sizing: border-box;
@@ -23,13 +23,19 @@
       top: 0;
       width: 100%;
       background-color: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+    }
+
+    .navbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 15px 30px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-      backdrop-filter: blur(8px);
-      z-index: 1000;
     }
 
     .navbar a {
@@ -65,18 +71,20 @@
   </style>
 </head>
 <body>
-  <!-- Navigace -->
+  <!-- NAVIGACE -->
   <div class="navbar">
-    <div><a href="index.html">Domů</a></div>
-    <div><a href="aboutme.html">About me</a></div>
+    <div class="navbar-inner">
+      <div><a href="index.html">Domů</a></div>
+      <div><a href="aboutme.html">About me</a></div>
+    </div>
   </div>
 
   <h1>O mně</h1>
 
   <p>
     Pohledný, plavovlasý, sympatický člověk s charismatem na rozdávání.<br>
-    Mistr improvizace a Embedded systémů.<br>
-    <strong>Nikdo nebenchuje to co já močkyyyyy!</strong>
+    Mistr improvizace a stylu.<br>
+    <strong>Močko nebenchuješ co já, moreeeee!</strong>
   </p>
 </body>
 </html>
