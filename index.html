@@ -2,71 +2,25 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>Moje Fancy Stránka</title>
+  <title>Moje stránka</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       text-align: center;
-      background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
-      color: #333;
-      padding: 60px 20px;
+      margin-top: 100px;
+      background-color: #f5f5f5;
     }
-
     h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      color: #4b0082;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      font-size: 2em;
     }
-
     p {
-      font-size: 1.3em;
-      margin-bottom: 10px;
-      color: #444;
+      font-size: 1.2em;
     }
-
-    #roman-date {
-      font-size: 1.5em;
-      margin-top: 30px;
-      font-weight: bold;
-      color: #2c3e50;
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 10px 20px;
-      border-radius: 12px;
-      display: inline-block;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 40px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    a img {
-      width: 200px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-      transition: transform 0.3s ease;
-    }
-
-    a:hover img {
-      transform: scale(1.05);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-    }
-
   </style>
 </head>
 <body>
   <h1>Vítej na mé stránce!</h1>
-  <p>Poskytovatel: <strong>Github.com</strong></p>
+  <p>Poskytovatel: Github.com</p>
   <p>Vojtěch Bareš</p>
   <h2 id="roman-date"></h2>
 
@@ -93,11 +47,9 @@
     const month = toRoman(today.getMonth() + 1);
     const year = toRoman(today.getFullYear());
 
-    document.getElementById("roman-date").innerText = `${day}.${month}.${year}`;
+    document.getElementById("roman-date").innerText = ${day}.${month}.${year};
   </script>
-
-  <a href="http://honzak.fun/" target="_blank">
-    <img src="Ioannes.png" alt="Ioannes">
-  </a>
+<A href = http://honzak.fun/ target = "_blank"><img src = Ioannes.png alt = Ioannes>
+  
 </body>
 </html>
